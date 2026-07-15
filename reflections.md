@@ -6,14 +6,19 @@ shared, with your OK, when we show off the program — so keep it honest but
 appropriate.)
 
 ## Lesson 0 — GitHub basics
-<!-- TODO -->
+<!-- TODO --> 
+# I learned what a repo was in github. 
+## I learned about what github is used to collab with others on code and coming together in the end to make a command.
 
 ## Lesson 1 — VS Code + connecting to GitHub
 <!-- TODO -->
+*I learned how to import a Github file from the mentor file to VS and make it my own*
+**I learned how to save my work on visual studio**
 
 ## Lesson 2 — Markdown
 <!-- TODO -->
-
+'I learned that a markdown file is one that is a rough draft'
+'I learned that the correct puncuation has to be in place for the different types of headings to function properly'
 ## Lesson 3 — HTML
 <!-- TODO -->
 
