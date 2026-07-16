@@ -20,7 +20,9 @@ appropriate.)
 'I learned that a markdown file is one that is a rough draft'
 'I learned that the correct puncuation has to be in place for the different types of headings to function properly'
 ## Lesson 3 — HTML
-<!-- TODO -->
+3a- I learned that the terminal isn't as scary as it looks you just have to know what the proper commands are and it's easy from there. I also learned that a command is telling it what to do and an argument is what the command is doing that action to.
+
+3b. In this lesson I learned the basics of HTML. Every html line needs an opening and a closing for example if i want a paragraph i would have to put "<p> in the beginning and </p> at the end
 
 ## Lesson 4 — CSS
 <!-- TODO -->
