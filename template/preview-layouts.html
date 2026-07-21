@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preview - Pick a Layout</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { ink: '#1B1B1B', brand: '#0C2559', accent: '#2C62CC', pop: '#FFE019' },
+    fontFamily: { sans: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+  }}}
+</script>
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
+  }
+</style>
+</head>
+
+<body class="bg-slate-100 font-sans text-ink">
+
+<header class="border-b border-slate-300 bg-white px-6 py-8">
+  <div class="mx-auto max-w-6xl">
+    <h1 class="text-3xl font-bold text-brand">Pick a layout</h1>
+    <p class="mt-2 max-w-2xl text-base">
+      Three real layouts, same content in each. They are structurally different, not just recolored.
+      Scroll each panel. Pick the one you want, then follow Step 2 in
+      <code class="rounded bg-slate-200 px-1">docs/lesson-4b-tailwind.md</code>.
+    </p>
+    <p class="mt-2 text-sm text-slate-600">
+      All three use identical section names, so switching later is the same copy-and-paste. You are not locked in.
+    </p>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-6 py-8">
+  <div class="grid gap-6 lg:grid-cols-3">
+
+    <!-- FUN -->
+    <section class="overflow-hidden rounded-lg border border-slate-300 bg-white shadow">
+      <div class="border-b border-slate-300 bg-white p-4">
+        <h2 class="text-xl font-bold text-brand">Fun</h2>
+        <p class="mt-1 text-sm">Rounded, asymmetric corners, icons, colorful cards. Friendly and informal.</p>
+        <p class="mt-2 text-xs text-slate-600">File: template/layouts/fun.html</p>
+      </div>
+      <iframe src="layouts/fun.html" title="Fun layout preview"
+              class="h-[600px] w-full border-0 bg-white"></iframe>
+    </section>
+
+    <!-- SERIOUS -->
+    <section class="overflow-hidden rounded-lg border border-slate-300 bg-white shadow">
+      <div class="border-b border-slate-300 bg-white p-4">
+        <h2 class="text-xl font-bold text-brand">Serious</h2>
+        <p class="mt-1 text-sm">Tight, traditional, conservative. Reads like a professional CV.</p>
+        <p class="mt-2 text-xs text-slate-600">File: template/layouts/serious.html</p>
+      </div>
+      <iframe src="layouts/serious.html" title="Serious layout preview"
+              class="h-[600px] w-full border-0 bg-white"></iframe>
+    </section>
+
+    <!-- BOLD -->
+    <section class="overflow-hidden rounded-lg border border-slate-300 bg-white shadow">
+      <div class="border-b border-slate-300 bg-white p-4">
+        <h2 class="text-xl font-bold text-brand">Bold</h2>
+        <p class="mt-1 text-sm">Dark, editorial, oversized type. Looks like a magazine spread.</p>
+        <p class="mt-2 text-xs text-slate-600">File: template/layouts/bold.html</p>
+      </div>
+      <iframe src="layouts/bold.html" title="Bold layout preview"
+              class="h-[600px] w-full border-0 bg-white"></iframe>
+    </section>
+
+  </div>
+
+  <div class="mx-auto mt-10 max-w-3xl rounded-lg border border-slate-300 bg-white p-6">
+    <h2 class="text-lg font-bold text-brand">Not sure?</h2>
+    <ul class="mt-3 space-y-2 text-base">
+      <li><strong>Serious</strong> if you want it to look like a resume you would hand to an employer.</li>
+      <li><strong>Fun</strong> if you want it to feel like you rather than a document.</li>
+      <li><strong>Bold</strong> if you want people to react to it the second it loads.</li>
+    </ul>
+    <p class="mt-4 text-sm text-slate-600">
+      There is no wrong answer, and switching later costs about five minutes.
+    </p>
+  </div>
+</main>
+
+<footer class="px-6 py-10 text-center text-sm text-slate-600">
+  <p>Preview page. This is not your site - it is a menu.</p>
+</footer>
+
+</body>
+</html>

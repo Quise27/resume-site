@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name</title>
+
+<!-- Font. Loaded with <link>, never a CSS @import - @import makes the browser
+     wait for the stylesheet before it even discovers the font. -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap">
+
+<!-- Tailwind. No install, no build step. The orange console warning is expected - ignore it. -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: {
+      ink: '#1B1B1B',   // Body text. LOCKED - 17:1 contrast on white. Do not change.
+
+      /* ============ PALETTE - EDIT THESE THREE ONLY ============ */
+      brand:  '#0C2559',
+      accent: '#2C62CC',
+      pop:    '#FFE019',
+      /* ============ END PALETTE ============ */
+    },
+    fontFamily: { sans: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+    borderRadius: { card: '2rem 0.25rem' },   // the asymmetric corner - this layout's signature
+    maxWidth: { site: '1550px' },
+  }}}
+</script>
+
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: .01ms !important;
+      transition-duration: .01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+</head>
+
+<body class="bg-white font-sans text-ink leading-normal">
+
+<!-- ===================== ONLY EDIT BELOW THIS LINE ===================== -->
+
+<!-- HEADER -->
+<header id="top" class="bg-brand px-6 py-16 text-center text-white">
+  <div class="mx-auto max-w-2xl">
+
+    <!-- PHOTO. Using initials instead? Delete this <img> and uncomment the <div> below it. -->
+    <img src="headshot.jpg" alt="Your name" class="mx-auto h-36 w-36 rounded-full border-[6px] border-pop object-cover">
+    <!-- <div class="mx-auto flex h-36 w-36 items-center justify-center rounded-full border-[6px] border-pop bg-accent text-5xl font-bold text-white">YN</div> -->
+
+    <h1 class="mt-6 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Your Name</h1>
+    <p class="mt-3 text-lg text-pop">One line about who you are</p>
+  </div>
+</header>
+
+<main class="mx-auto max-w-3xl px-6 py-14">
+
+  <!-- ABOUT -->
+  <section id="about" class="mb-12">
+    <div class="rounded-card bg-pop p-8 shadow-lg">
+      <h2 class="mb-3 flex items-center gap-2 text-2xl font-bold text-brand">
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8z"/></svg>
+        About
+      </h2>
+      <p class="text-base leading-relaxed text-ink">
+        Two or three sentences about yourself. Who you are, what you are working on,
+        what you are interested in.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="mb-12">
+    <h2 class="mb-5 flex items-center gap-2 text-2xl font-bold text-brand">
+      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3z"/></svg>
+      Projects
+    </h2>
+    <div class="grid gap-5 sm:grid-cols-2">
+      <article class="rounded-card border-4 border-brand p-6 transition hover:bg-brand hover:text-white">
+        <h3 class="text-lg font-bold">Project name</h3>
+        <p class="mt-1 text-base">What it is and what you used to build it.</p>
+      </article>
+      <article class="rounded-card border-4 border-accent p-6 transition hover:bg-accent hover:text-white">
+        <h3 class="text-lg font-bold">Another project</h3>
+        <p class="mt-1 text-base">School projects count. So does what you are learning.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="mb-12">
+    <h2 class="mb-5 flex items-center gap-2 text-2xl font-bold text-brand">
+      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.8-5.6 5 1.6 7.4L12 18.3 5.5 22.1l1.6-7.4-5.6-5 7.5-.8z"/></svg>
+      Skills
+    </h2>
+    <ul class="flex flex-wrap gap-3">
+      <li class="rounded-full bg-accent px-4 py-2 text-sm font-bold text-white">HTML</li>
+      <li class="rounded-full bg-accent px-4 py-2 text-sm font-bold text-white">CSS</li>
+      <li class="rounded-full bg-accent px-4 py-2 text-sm font-bold text-white">Learning JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="text-center">
+    <div class="rounded-card bg-brand px-8 py-12 text-white">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="mt-2 text-base">Want to talk? Say hello.</p>
+      <a href="#"
+         class="mt-6 inline-block rounded-full bg-pop px-8 py-3 text-base font-bold text-ink no-underline transition hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pop">
+        Email me
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer" class="py-8 text-center text-sm text-ink">
+  <p>&copy; 2026 Your Name</p>
+</footer>
+
+<!-- ===================== ONLY EDIT ABOVE THIS LINE ===================== -->
+
+</body>
+</html>

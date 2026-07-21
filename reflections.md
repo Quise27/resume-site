@@ -25,7 +25,8 @@ appropriate.)
 3b. In this lesson I learned the basics of HTML. Every html line needs an opening and a closing for example if i want a paragraph i would have to put "<p> in the beginning and </p> at the end
 
 ## Lesson 4 — CSS
-<!-- TODO -->
+## Padding is the inside and it pushes the wall from you and margin is the outside and it pushed others away from your wall.
+** The cascading part makes it difficult for people. The later rules beat the earlier ones.
 
 ## Lesson 5 — JavaScript
 <!-- TODO -->
