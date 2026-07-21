@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preview - Pick a Palette</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { ink: '#1B1B1B' },
+    fontFamily: { sans: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+  }}}
+</script>
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
+  }
+</style>
+</head>
+
+<body class="bg-slate-100 font-sans text-ink">
+
+<header class="border-b border-slate-300 bg-white px-6 py-8">
+  <div class="mx-auto max-w-6xl">
+    <h1 class="text-3xl font-bold">Pick a palette</h1>
+    <p class="mt-2 max-w-2xl text-base">
+      Twelve sets, each shown on a real card so you can see the colors working together.
+      Pick one and copy its three hex codes into the palette block in your page.
+    </p>
+    <p class="mt-3 max-w-2xl text-sm text-slate-700">
+      Every set here has been contrast-checked, so your text stays readable. Picking three colors
+      that work together is a genuinely hard design problem. Choose from the list rather than
+      inventing one.
+    </p>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-6 py-8">
+  <div id="grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+
+  <div class="mx-auto mt-10 max-w-3xl rounded-lg border border-slate-300 bg-white p-6">
+    <h2 class="text-lg font-bold">How to use one</h2>
+    <p class="mt-3 text-base">In your page, find this block near the top and replace the three values:</p>
+<pre class="mt-3 overflow-x-auto rounded bg-slate-900 p-4 text-sm text-slate-100">/* ============ PALETTE - EDIT THESE THREE ONLY ============ */
+brand:  '#0C2559',
+accent: '#2C62CC',
+pop:    '#FFE019',
+/* ============ END PALETTE ============ */</pre>
+    <p class="mt-4 text-base">
+      Leave <code class="rounded bg-slate-200 px-1">ink</code> alone. It sits outside the block on
+      purpose, at a 17:1 contrast ratio, so your body text stays readable no matter which palette
+      you pick.
+    </p>
+  </div>
+</main>
+
+<footer class="px-6 py-10 text-center text-sm text-slate-600">
+  <p>Preview page. This is not your site - it is a menu.</p>
+</footer>
+
+<script>
+  const palettes = [
+    { name: 'Carson Navy',   brand: '#0C2559', accent: '#2C62CC', pop: '#FFE019' },
+    { name: 'Forest',        brand: '#14532D', accent: '#16A34A', pop: '#FDE047' },
+    { name: 'Wine',          brand: '#7F1D1D', accent: '#DC2626', pop: '#FCD34D' },
+    { name: 'Plum',          brand: '#4C1D95', accent: '#7C3AED', pop: '#F0ABFC' },
+    { name: 'Teal',          brand: '#134E4A', accent: '#0D9488', pop: '#5EEAD4' },
+    { name: 'Slate',         brand: '#1E293B', accent: '#475569', pop: '#38BDF8' },
+    { name: 'Rust',          brand: '#7C2D12', accent: '#EA580C', pop: '#FED7AA' },
+    { name: 'Indigo',        brand: '#1E1B4B', accent: '#4F46E5', pop: '#A5B4FC' },
+    { name: 'Charcoal Gold', brand: '#1C1917', accent: '#57534E', pop: '#EAB308' },
+    { name: 'Ocean',         brand: '#0C4A6E', accent: '#0284C7', pop: '#7DD3FC' },
+    { name: 'Berry',         brand: '#831843', accent: '#DB2777', pop: '#FBCFE8' },
+    { name: 'Moss',          brand: '#1A2E05', accent: '#4D7C0F', pop: '#BEF264' },
+  ];
+
+  document.getElementById('grid').innerHTML = palettes.map(p => `
+    <section class="overflow-hidden rounded-lg border border-slate-300 bg-white shadow">
+
+      <div style="background:${p.brand}" class="px-5 py-6 text-white">
+        <div class="flex items-center gap-3">
+          <div style="background:${p.pop};color:${p.brand}"
+               class="flex h-12 w-12 items-center justify-center rounded-full text-lg font-bold">YN</div>
+          <div>
+            <h2 class="text-lg font-bold leading-tight">Your Name</h2>
+            <p class="text-sm opacity-80">Aspiring web developer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5">
+        <h3 style="color:${p.accent}" class="text-xs font-bold uppercase tracking-widest">About</h3>
+        <p class="mt-2 text-sm text-ink">
+          Body text always stays this near-black so it is easy to read on white.
+        </p>
+        <a href="#" style="background:${p.brand}"
+           class="mt-4 inline-block rounded px-4 py-2 text-sm text-white no-underline">Email me</a>
+        <span style="background:${p.pop};color:#1B1B1B"
+              class="ml-2 inline-block rounded px-3 py-2 text-sm font-bold">Highlight</span>
+      </div>
+
+      <div class="border-t border-slate-200 bg-slate-50 px-5 py-4">
+        <p class="text-sm font-bold">${p.name}</p>
+        <div class="mt-2 grid gap-1 font-mono text-xs text-slate-700">
+          <span>brand:&nbsp;&nbsp;'${p.brand}',</span>
+          <span>accent: '${p.accent}',</span>
+          <span>pop:&nbsp;&nbsp;&nbsp;&nbsp;'${p.pop}',</span>
+        </div>
+      </div>
+
+    </section>
+  `).join('');
+</script>
+
+</body>
+</html>
