@@ -14,7 +14,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <script>
-  tailwind.config = { theme: { extend: {
+  tailwind.config = { darkMode: 'class', theme: { extend: {
     colors: {
       ink: '#1B1B1B',   // Body text. LOCKED - 17:1 contrast on white. Do not change.
 
@@ -42,12 +42,12 @@
 </style>
 </head>
 
-<body class="bg-white font-sans text-ink leading-normal">
+<body class="bg-white dark:bg-ink font-sans text-ink leading-normal dark:bg-ink dark:text-white">
 
 <!-- ===================== ONLY EDIT BELOW THIS LINE ===================== -->
 
 <!-- HEADER -->
-<header id="top" class="border-b-4 border-brand bg-white">
+<header id="top" class="border-b-4 border-brand bg-white dark:bg-ink">
   <div class="mx-auto flex max-w-3xl flex-col items-center gap-4 px-6 py-12 sm:flex-row sm:items-center sm:gap-8">
 
     <!-- PHOTO. Using initials instead? Delete this <img> and uncomment the <div> below it. -->
@@ -111,10 +111,14 @@
 </main>
 
 <!-- FOOTER -->
+ <button id="dark-mode-toggle"
+        class="mx-auto mb-8 block rounded border-2 border-brand px-4 py-2 text-sm dark:border-pop dark:text-pop">
+  Dark Mode
+</button>
 <footer id="footer" class="border-t border-slate-200 py-8 text-center text-sm text-ink">
   <p>&copy; 2026 Marquise McGee</p>
 </footer>
-
+<script src="script.js"></script>
 <!-- ===================== ONLY EDIT ABOVE THIS LINE ===================== -->
 
 </body>
