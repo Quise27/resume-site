@@ -33,7 +33,7 @@ appropriate.)
 4c. I chose the initials because my eyes were partially closed in the picture. The file went right to vs code when downloading.
 
 ## Lesson 5 — JavaScript
-<!-- TODO -->
+<!-- TODO --> I knew tha JavaScript had something to do with mechanics and the movement of a website. The copy and pasting is easy but if had to write java from scratch it would be complicated. Yes the console showed me something useful.
 
 ## Lesson 6 — Building my resume
 <!-- TODO -->
