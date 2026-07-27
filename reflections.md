@@ -39,7 +39,7 @@ appropriate.)
 <!-- TODO --> There was no section that was hard to write the only thing was I needed stronger action verbs to make my sentences more professional. To be quite honest there is nothing that i'm proud of only because I always feel like I could do more.
 
 ## Lesson 7 — My second page
-<!-- TODO -->
+<!-- TODO --> I built a page based on my interests and my favorite food. I did this because its easy for me to talk about it without getting too personal about my life. Starting from scratch was definitely much harder because there was no fill in the blank I had to manually type to get the things that I wanted.
 
 ## Lesson 8 — The homepage / working as a group
 <!-- TODO -->
