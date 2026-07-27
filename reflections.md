@@ -36,7 +36,7 @@ appropriate.)
 <!-- TODO --> I knew tha JavaScript had something to do with mechanics and the movement of a website. The copy and pasting is easy but if had to write java from scratch it would be complicated. Yes the console showed me something useful.
 
 ## Lesson 6 — Building my resume
-<!-- TODO -->
+<!-- TODO --> There was no section that was hard to write the only thing was I needed stronger action verbs to make my sentences more professional. To be quite honest there is nothing that i'm proud of only because I always feel like I could do more.
 
 ## Lesson 7 — My second page
 <!-- TODO -->

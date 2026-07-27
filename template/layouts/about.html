@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marquise McGee</title>
+
+<!-- Font. Loaded with <link>, never a CSS @import - @import makes the browser
+     wait for the stylesheet before it even discovers the font. -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap">
+
+<!-- Tailwind. No install, no build step. The orange console warning is expected - ignore it. -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  tailwind.config = { darkMode: 'class', theme: { extend: {
+    colors: {
+      ink: '#1B1B1B',   // Body text. LOCKED - 17:1 contrast on white. Do not change.
+
+      /* ============ PALETTE - EDIT THESE THREE ONLY ============ */
+      brand:  '#0C2559',
+      accent: '57534E',
+      pop:    '#5EEAD4',
+      /* ============ END PALETTE ============ */
+    },
+    fontFamily: { sans: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+    maxWidth: { site: '1550px' },
+  }}}
+</script>
+
+<style>
+  /* Respects the "reduce motion" setting some people turn on for motion sickness
+     or migraines. Costs nothing and most sites skip it. */
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: .01ms !important;
+      transition-duration: .01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+</head>
+
+<body class="bg-white dark:bg-ink font-sans text-ink leading-normal dark:bg-ink dark:text-white">
+
+<!-- ===================== ONLY EDIT BELOW THIS LINE ===================== -->
+<main class="mx-auto max-w-3xl px-6 py-10">
+  <h1 class="text-4xl font-bold text-brand">My favorite things to do</h1>
+  <p class="mt-4 text-base leading-relaxed">
+    I love to play video games. My favorite games are Madden and College Football. If you can't tell I love to watch Football
+    Football season is approaching very fast and I can't wait until the day gets here. I love to hangout with my brothers. I have been knowing my friends since pre school and they have been solid since day one.
+    Everytime we hangout it's always a fun time. 
+  </p>
+</main>
+
+<main class="mx-auto max-w-3xl px-6 py-10">
+  <h2 class="text-4xl font-bold text-brand">My favorite food</h2>
+  <p class="mt-4 text-base leading-relaxed">
+    My favorite cuisine is asian and mexican food. Those 2 cuisines are top tier and can't be beat. There is so much diversity when it comes to 
+    eating those foods.
+  </p>
+</main>
+<a href="index.html" class="text-accent underline">Back to my resume</a>
+<!-- ===================== ONLY EDIT ABOVE THIS LINE ===================== -->
+
+</body>
+</html>
