@@ -35,3 +35,5 @@ appropriate.)
 ## Lesson 9 — Putting my site online
 <!-- TODO -->
 
+## Lesson 10 — Adding motion
+<!-- TODO -->
