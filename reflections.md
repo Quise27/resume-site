@@ -47,6 +47,8 @@ Marquise McGee
 Sophmore in college working as a Summer Youth Worker for the City of Carson
 template/index.html
 
+Seeing everyone's work in one place is Cool. No I think my work is fine. It could be better but i'm happy.
+
 ## Lesson 9 — Putting my site online
 <!-- TODO -->
 
