@@ -64,4 +64,4 @@ text stacked top to bottom. That's expected! Next lesson fixes that.
    about to make the difference obvious.
 2. Add a couple sentences to `reflections.md` under **Lesson 3**.
 
-Next up: **CSS** — `docs/lesson-4-css.md`.
+Next up: **CSS** — `docs/lesson-4a-css.md`.
