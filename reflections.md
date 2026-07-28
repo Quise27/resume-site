@@ -51,4 +51,4 @@ Seeing everyone's work in one place is Cool. No I think my work is fine. It coul
 
 ## Lesson 9 — Putting my site online
 <!-- TODO -->
-
+ It feels great to have a live website. Next I would add any certifications that I complete as I go along my cybersecurity journey.
