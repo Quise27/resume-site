@@ -43,6 +43,9 @@ appropriate.)
 
 ## Lesson 8 — The homepage / working as a group
 <!-- TODO -->
+Marquise McGee
+Sophmore in college working as a Summer Youth Worker for the City of Carson
+template/index.html
 
 ## Lesson 9 — Putting my site online
 <!-- TODO -->
