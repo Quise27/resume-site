@@ -51,4 +51,16 @@ Seeing everyone's work in one place is Cool. No I think my work is fine. It coul
 
 ## Lesson 9 — Putting my site online
 <!-- TODO -->
+<<<<<<< HEAD
  It feels great to have a live website. Next I would add any certifications that I complete as I go along my cybersecurity journey.
+=======
+
+## Lesson 10 — Adding motion
+<!-- TODO -->
+
+## Lesson 11 — My first interactive feature
+<!-- TODO -->
+
+## Lesson 12 — Pulling live data
+<!-- TODO -->
+>>>>>>> 8fd594250840c9cfcee7cd769af48db72dfd2465
