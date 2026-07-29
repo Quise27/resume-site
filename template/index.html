@@ -38,7 +38,11 @@
       transition-duration: .01ms !important;
       scroll-behavior: auto !important;
     }
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
+  body { animation: fadeInUp 0.6s ease-out; }
 </style>
 </head>
 
@@ -52,7 +56,7 @@
 
     <!-- PHOTO. Using initials instead? Delete this <img> and uncomment the <div> below it. -->
     <!-- <img src="headshot.jpg" alt="Marquise McGee" class="h-32 w-32 shrink-0 rounded-full border-2 border-brand object-cover"> -->
-     <div class="flex h-32 w-32 shrink-0 items-center justify-center rounded-full border-2 border-brand bg-brand text-4xl font-bold text-white">MM</div> 
+     <div class="flex h-32 w-32 shrink-0 items-center justify-center rounded-full border-2 border-brand bg-brand text-4xl font-bold text-white transition hover:scale-105">MM</div> 
 
     <div class="text-center sm:text-left">
       <h1 class="text-4xl font-bold leading-tight tracking-tight text-brand">Marquise McGee</h1>
@@ -93,13 +97,13 @@
   <section id="skills" class="border-b border-slate-200 py-10">
     <h2 class="mb-4 text-sm font-bold uppercase tracking-widest text-accent">Skills</h2>
     <ul class="flex flex-wrap gap-2">
-      <li class="rounded border border-brand px-3 py-1 text-sm">Critical Thinking</li>
-      <li class="rounded border border-brand px-3 py-1 text-sm">Leadership</li>
-       <li class="rounded border border-brand px-3 py-1 text-sm">Teamwork</li>
-       <li class="rounded border border-brand px-3 py-1 text-sm">Communication</li>
-      <li class="rounded border border-brand px-3 py-1 text-sm">HTML</li>
-      <li class="rounded border border-brand px-3 py-1 text-sm">C++</li>
-      <li class="rounded border border-brand px-3 py-1 text-sm">Python</li>
+      <li class="rounded border border-brand px-3 py-1 text-sm transition hover:-translate-y-1 hover:shadow-lg">Critical Thinking</li>
+      <li class="rounded border border-brand px-3 py-1 text-sm transition hover:-translate-y-1 hover:shadow-lg">Leadership</li>
+       <li class="rounded border border-brand px-3 py-1 text-sm transition hover:-translate-y-1 hover:shadow-lg">Teamwork</li>
+       <li class="rounded border border-brand px-3 py-1 text-sm transition hover:-translate-y-1 hover:shadow-lg">Communication</li>
+      <li class="rounded border border-brand px-3 py-1 text-sm transition hover:-translate-y-1 hover:shadow-lg">HTML</li>
+      <li class="rounded border border-brand px-3 py-1 text-sm transition hover:-translate-y-1 hover:shadow-lg">C++</li>
+      <li class="rounded border border-brand px-3 py-1 text-sm transition hover:-translate-y-1 hover:shadow-lg">Python</li>
       
     </ul>
   </section>
@@ -108,7 +112,7 @@
   <section id="contact" class="py-10">
     <h2 class="mb-4 text-sm font-bold uppercase tracking-widest text-accent">mcgeemarquise@gmail.com</h2>
     <a href="mailto:mcgeemarquise@gmail.com"
-       class="inline-block rounded border-2 border-brand bg-brand px-6 py-2.5 text-base text-white no-underline transition hover:bg-accent hover:border-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+       class="inline-block rounded border-2 border-brand bg-brand px-6 py-2.5 text-base text-white no-underline transition hover:bg-accent hover:border-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition hover:scale-105 hover:shadow-lg hover:rotate-3"">
       Email me
     </a>
   </section>
