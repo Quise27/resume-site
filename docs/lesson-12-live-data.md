@@ -115,14 +115,85 @@ connection shows a message instead of silently doing nothing. Update your code's
 
 ---
 
-## Optional — make it yours
+## Make it yours — pick a different API
 
-The dog service is just one address. Swap the URL and the `.json()` field to pull something else:
+The dog service is just one address. Below is a **menu of safe, free APIs** — every one was tested
+for this class, needs no sign-up, and works exactly like the dog. Pick whatever sounds fun.
 
-- **Random joke:** fetch `https://official-joke-api.appspot.com/random_joke`, then show
-  `data.setup` and `data.punchline` as text instead of an image.
-- Search the web for **"free public API no key"** and try one. The pattern never changes:
-  `fetch` → `.then` → use the data.
+> ⭐ **Only use the ones on this list.** There are thousands of APIs on the internet, but some need
+> a paid key, some don't work from a webpage, and some aren't appropriate. These are all checked and
+> ready — start here.
+
+### First, one thing to know: images vs. text
+
+APIs give back one of two kinds of thing, and each goes to a slightly different place:
+
+- **An image** (like the dog) → you put the result into an **image's `src`**, exactly like Step 3:
+  ```js
+  document.getElementById('dog-img').src = data.message;
+  ```
+- **Text** (a joke, a fact) → you put it into a **paragraph's text** instead. Add a `<p id="output"></p>`
+  next to your button, then:
+  ```js
+  document.getElementById('output').textContent = data.fact;
+  ```
+
+The menu below tells you, for each API, the exact **field to use** and whether it's an image or text.
+
+### 🐶 Animals
+| What you get | URL to fetch | Use this field | Type |
+|---|---|---|---|
+| A dog photo | `https://dog.ceo/api/breeds/image/random` | `data.message` | image |
+| A fox photo | `https://randomfox.ca/floof/` | `data.image` | image |
+| A cat photo | `https://cataas.com/cat?json=true` | `data.url` | image |
+| A cat fact | `https://catfact.ninja/fact` | `data.fact` | text |
+
+### 😂 Jokes & fun
+| What you get | URL to fetch | Use this field | Type |
+|---|---|---|---|
+| A two-line joke | `https://official-joke-api.appspot.com/random_joke` | `data.setup` then `data.punchline` | text |
+| A yes/no + gif | `https://yesno.wtf/api` | `data.answer` (text) and `data.image` (gif) | both |
+| A random recipe | `https://www.themealdb.com/api/json/v1/1/random.php` | `data.meals[0].strMeal` and `data.meals[0].strMealThumb` | both |
+| A made-up person | `https://randomuser.me/api/` | `data.results[0].name.first`, image `data.results[0].picture.large` | both |
+
+### 🎮 Games & code
+| What you get | URL to fetch | Use this field | Type |
+|---|---|---|---|
+| A Pokémon | `https://pokeapi.co/api/v2/pokemon/pikachu` *(swap the name)* | `data.name`, image `data.sprites.front_default` | both |
+| **Your** GitHub stats | `https://api.github.com/users/YOUR-USERNAME` | `data.name`, `data.public_repos`, image `data.avatar_url` | both |
+
+### 🔒 Tech & networking
+| What you get | URL to fetch | Use this field | Type |
+|---|---|---|---|
+| Your internet info | `https://ipwho.is/` | `data.city`, `data.country`, `data.ip` | text |
+| Live weather | `https://api.open-meteo.com/v1/forecast?latitude=33.8&longitude=-118.3&current_weather=true` | `data.current_weather.temperature` | text |
+
+### 🎬 Movies & characters
+| What you get | URL to fetch | Use this field | Type |
+|---|---|---|---|
+| A Studio Ghibli film | `https://ghibliapi.vercel.app/films` | `data[0].title`, `data[0].description` | text |
+| A Disney character | `https://api.disneyapi.dev/character` | `data.data[0].name` | text |
+| A Harry Potter character | `https://hp-api.onrender.com/api/characters` | `data[0].name`, image `data[0].image` | both |
+
+### 📚 Words & name games
+| What you get | URL to fetch | Use this field | Type |
+|---|---|---|---|
+| A word's definition | `https://api.dictionaryapi.dev/api/v2/entries/en/happy` *(swap the word)* | `data[0].meanings[0].definitions[0].definition` | text |
+| Guess age from a name | `https://api.agify.io/?name=YOUR-NAME` | `data.age` | text |
+| Guess gender from a name | `https://api.genderize.io/?name=YOUR-NAME` | `data.gender` | text |
+| Guess where a name is from | `https://api.nationalize.io/?name=YOUR-NAME` | `data.country[0].country_id` | text |
+| A trivia question | `https://the-trivia-api.com/v2/questions?limit=1` | `data[0].question.text`, `data[0].correctAnswer` | text |
+
+### Not sure which? Go with what you're into:
+- **Into games or coding?** Try **Pokémon** or **your own GitHub stats**.
+- **Into tech or networking?** Try **your internet info** — it shows your own city and connection.
+- **Into animals?** Any of the **dog / fox / cat** ones.
+- **Into movies?** **Ghibli**, **Disney**, or **Harry Potter**.
+- **Love words or facts?** **Word definition**, **the name games**, or **trivia**.
+
+> ⭐ **The code is always the same three steps** no matter which you pick: `fetch` the URL →
+> `.then` turn it into data → put a field on the page. You already wrote it once for the dog. Swap
+> the URL and the field, and you can pull almost anything.
 
 ---
 
