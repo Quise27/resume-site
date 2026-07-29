@@ -56,7 +56,7 @@
 
     <!-- PHOTO. Using initials instead? Delete this <img> and uncomment the <div> below it. -->
     <!-- <img src="headshot.jpg" alt="Marquise McGee" class="h-32 w-32 shrink-0 rounded-full border-2 border-brand object-cover"> -->
-     <div class="flex h-32 w-32 shrink-0 items-center justify-center rounded-full border-2 border-brand bg-brand text-4xl font-bold text-white transition hover:scale-105">MM</div> 
+     <div class="flex h-32 w-32 shrink-0 items-center justify-center rounded-full border-2 border-brand bg-brand text-4xl font-bold text-white transition hover:scale-105 zoomable">MM</div> 
 
     <div class="text-center sm:text-left">
       <h1 class="text-4xl font-bold leading-tight tracking-tight text-brand">Marquise McGee</h1>
@@ -127,8 +127,18 @@
 <footer id="footer" class="border-t border-slate-200 py-8 text-center text-sm text-ink">
   <p>&copy; 2026 Marquise McGee</p>
 </footer>
+<div class="my-8 text-center">
+  <button id="dog-btn" class="rounded border-2 border-brand px-5 py-2 transition hover:scale-105">
+    Show me a dog 🐶
+  </button>
+  <img id="dog-img" src="" alt="A random dog" class="mx-auto mt-4 hidden max-h-80 rounded-lg shadow-lg">
+</div>
 <script src="script.js"></script>
 <a href="about.html" class="text-accent underline">See my About page</a>
+<div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4">
+  <img id="lightbox-img" src="" alt="Enlarged image" class="max-h-full max-w-full rounded-lg">
+</div>
+
 <!-- ===================== ONLY EDIT ABOVE THIS LINE ===================== -->
 
 </body>

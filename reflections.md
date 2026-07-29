@@ -56,11 +56,11 @@ Seeing everyone's work in one place is Cool. No I think my work is fine. It coul
 =======
 
 ## Lesson 10 — Adding motion
-<!-- TODO -->
+<!-- TODO --> My favorite effect was the hover effect. I used that effect on the contact button and on the skills tabs. No I didn't catch myself wanting to add too much.
 
 ## Lesson 11 — My first interactive feature
 <!-- TODO -->
 
 ## Lesson 12 — Pulling live data
-<!-- TODO -->
+<!-- TODO --> The dog images comes from api's different breeds and the pictures are randomized. I want the page to fetch Aaron rodgers highlights.
 >>>>>>> 8fd594250840c9cfcee7cd769af48db72dfd2465
