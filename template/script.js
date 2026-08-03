@@ -36,7 +36,7 @@ toggleButton.addEventListener('click', function () {
 document.getElementById('dog-btn').addEventListener('click', function () {
 
   // 1. Ask the dog service for a random photo.
-  fetch('https://dog.ceo/api/breeds/image/random')
+  fetch('https://hp-api.onrender.com/api/characters')
 
     // 2. When it answers, unpack the response into usable data.
     .then(function (response) { return response.json(); })
@@ -44,7 +44,7 @@ document.getElementById('dog-btn').addEventListener('click', function () {
     // 3. Now we have the data — put the photo on the page.
     .then(function (data) {
       const dogImg = document.getElementById('dog-img');
-      dogImg.src = data.message;          // the photo's web address
+      dogImg.src = data[0].image;          // the photo's web address
       dogImg.classList.remove('hidden');  // reveal it
     });
 });
