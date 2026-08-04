@@ -48,3 +48,20 @@ document.getElementById('dog-btn').addEventListener('click', function () {
       dogImg.classList.remove('hidden');  // reveal it
     });
 });
+
+// REMEMBER THE VISITOR ------------------------------------
+
+const greeting = document.getElementById('greeting');
+
+// 1. When the page loads, check the notebook for a saved name.
+const savedName = localStorage.getItem('visitorName');
+if (savedName) {
+  greeting.textContent = 'Welcome back, ' + savedName + '! 👋';
+}
+
+// 2. When they click Save, write their name into the notebook.
+document.getElementById('name-save').addEventListener('click', function () {
+  const name = document.getElementById('name-input').value;
+  localStorage.setItem('visitorName', name);          // save it
+  greeting.textContent = 'Welcome back, ' + name + '! 👋';
+});
