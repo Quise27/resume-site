@@ -38,4 +38,5 @@ professional. You'll write your own later when you build your resume site.
 
 Add a couple sentences to `reflections.md` under **Lesson 2**.
 
-Next up: **actual HTML** — `docs/lesson-3-html.md`.
+Next up: **the terminal, then actual HTML.** Start with `docs/lesson-3a-terminal.md`, then go on
+to `docs/lesson-3b-html.md`.
