@@ -202,7 +202,7 @@ Near the top of your page, inside the `<head>`, there's a block that looks like 
 ```html
 <script>
   tailwind.config = { theme: { extend: { colors: {
-    ink: '#1B1B1B',
+    ink: '#87c608',
 
     /* ===== PALETTE - EDIT THESE THREE ONLY ===== */
     brand:  '#0C2559',
